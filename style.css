@@ -520,4 +520,13 @@ responsive design starts
         width: 100%;
         height: auto;
     }
+    /* copa jersey shop */
+    #copa-shop .jersey-shop {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .item {
+        width: 80%;
+        height: auto;
+        margin: auto;
+    }
 }
