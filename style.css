@@ -1,0 +1,478 @@
+/* google font linkup */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* common styles */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    padding: 100px;
+}
+
+.crimson-button {
+    text-decoration: none;
+    color: #fff;
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    display: inline-block;
+    transition: transform 1s;
+}
+
+.crimson-button:hover {
+    transform: scale(1.1) rotate(-5deg);
+}
+
+.flexible-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+h2.section-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+
+/* -------------------------- *\
+intro/home section styles starts 
+\* -------------------------- */
+
+#intro {
+    background-color: #2D25A0;
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#intro h1 {
+    font-size: 64px;
+    font-weight: 700;
+    width: 485px;
+}
+
+#intro img {
+    width: 556px;
+    height: 456px;
+}
+
+
+/* ----------------------- *\
+players section styles starts 
+\* ----------------------- */
+
+#players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+.player-box {
+    width: 330px;
+    height: 474px;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    margin: auto;
+}
+
+.player-box img {
+    width: 100%;
+}
+
+.player-box .player-name {
+    margin-top: 16px;
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+.player-box .player-details {
+    margin: 0;
+    margin-top: 20px;
+}
+
+
+/* -------------------------- *\
+highlights section styles starts 
+\* -------------------------- */
+
+#highlights {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #fff;
+}
+
+#highlights h1 {
+    font-size: 48px;
+    margin-bottom: 8px;
+    width: 469px;
+}
+
+#highlights p {
+    margin-bottom: 34px;
+    width: 404px;
+}
+
+#highlights img {
+    width: 567px;
+    height: 427px;
+}
+
+
+/* ----------------------------- *\
+latest result section styles starts 
+\* ----------------------------- */
+
+#latest-result {
+    text-align: center;
+    background-color: #10437A;
+    padding: 30px 0;
+}
+
+#latest-result h2.section-title {
+    color: white;
+}
+
+.result {
+    width: 300px;
+    height: 220px;
+    padding: 30px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.result .time {
+    font-size: 1.3em;
+    font-weight: 550;
+    margin-bottom: 25px;
+}
+
+.fa-trophy {
+    color: #CF7000;
+}
+
+.fa-times {
+    color: crimson;
+}
+
+.result .team {
+    width: 80px;
+}
+
+.flexible-content .team img {
+    width: 40px;
+    height: 40px;
+}
+
+
+/* ------------- *\
+Shops design starts 
+\* ------------- */
+
+#copa-shop .jersey-shop {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
+
+.item img {
+    width: 100%;
+}
+
+.item .buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item a {
+    display: inline-block;
+    width: 47%;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+
+.item a.price {
+    background-color: #EEEEEE;
+    color: black;
+    border: 2px solid #EEEEEE;
+    transition: color .8s, background .8s;
+}
+
+.item a.price:hover {
+    background: transparent;
+}
+
+.item a.add-cart {
+    background-color: #3DBAFD;
+    color: white;
+    border: 2px solid #3DBAFD;
+    transition: color .8s, background .8s;
+}
+
+.item a.add-cart:hover {
+    color: #3DBAFD;
+    background: transparent;
+}
+
+
+/* ---------------------- *\
+footer section styles starts 
+\* ---------------------- */
+
+footer {
+    text-align: center;
+}
+
+footer img {
+    width: 40%;
+}
+
+footer .icons {
+    display: flex;
+    justify-content: center;
+}
+
+footer .icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #E7E7E8;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 7px;
+}
+
+footer .icon a {
+    text-decoration: none;
+    color: #969BAB;
+}
+
+footer p {
+    font-size: 18px;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ---------------------- *\
+responsive design starts 
+\* ---------------------- */
+
+
+/* mobile */
+
+@media only screen and (max-width:688px) {
+    /* common styles */
+    .container {
+        padding: 0;
+    }
+    .img-parent {
+        text-align: center;
+    }
+    .crimson-button {
+        margin-left: 15px;
+    }
+    section {
+        margin-bottom: 30px;
+    }
+    h2.section-title {
+        font-size: 30px;
+    }
+    /* home/intro section */
+    #intro {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #intro h1 {
+        width: 278px;
+        padding-left: 15px;
+        font-size: 36px;
+    }
+    #intro img {
+        width: 90%;
+        height: auto;
+        margin-top: 50px;
+    }
+    /* players section */
+    #players {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #players::before {
+        content: "Players";
+        display: block;
+        font-size: 30px;
+        color: #E02C6D;
+        text-align: center;
+        font-weight: 700;
+    }
+    .player-box {
+        width: 80%;
+        height: auto;
+    }
+    /* highlights section starts */
+    #highlights {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #highlights h1 {
+        padding-right: 0;
+        font-size: 30px;
+        width: 90%;
+        padding-left: 15px;
+        margin: 0 0 8px;
+    }
+    #highlights h1::before {
+        content: "Highlights";
+        display: block;
+        color: #E02C6D;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    #highlights p {
+        padding-right: 0;
+        width: 90%;
+        padding-left: 15px;
+    }
+    #highlights img {
+        width: 90%;
+        height: auto;
+        margin-top: 50px;
+    }
+    /* latest result section */
+    .result {
+        width: 75%;
+        height: auto;
+    }
+    /* copa jersey shop */
+    #copa-shop .jersey-shop {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .item {
+        width: 90%;
+        height: auto;
+        margin: auto;
+    }
+    /* footer section */
+    footer {
+        margin-top: 20px;
+        padding-top: 20px;
+    }
+    footer img {
+        width: 271px;
+        height: auto;
+    }
+    footer p {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+    /* common styles */
+    .container {
+        padding: 0;
+    }
+    .img-parent {
+        text-align: center;
+    }
+    .crimson-button {
+        margin-left: 45px;
+    }
+    section {
+        margin-bottom: 30px;
+    }
+    h2.section-title {
+        font-size: 30px;
+    }
+    .flexible-content {
+        padding: 0 40px;
+    }
+    /* home/intro section */
+    #intro {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #intro h1 {
+        width: 450px;
+        padding-left: 45px;
+        font-size: 55px;
+    }
+    #intro img {
+        width: 90%;
+        height: auto;
+        margin-top: 100px;
+    }
+    /* players section */
+    #players {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .player-box {
+        width: 80%;
+    }
+    .player-box .player-details {
+        margin-top: 10px;
+    }
+    /* highlights section starts */
+    #highlights {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #highlights h1 {
+        padding-right: 0;
+        font-size: 40px;
+        width: 90%;
+        padding-left: 45px;
+        margin: 50px 0 8px;
+    }
+    #highlights p {
+        padding-right: 8px;
+        width: 90%;
+        padding-left: 45px;
+    }
+    #highlights img {
+        width: 90%;
+        height: auto;
+        margin-top: 50px;
+    }
+    /* latest result section */
+    .result {
+        width: 80%;
+        height: auto;
+    }
+    /* copa jersey shop */
+    #copa-shop .jersey-shop {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .item {
+        width: 80%;
+        height: auto;
+        margin: auto;
+    }
+    /* footer section */
+    footer {
+        margin-top: 20px;
+        padding-top: 20px;
+    }
+    footer p {
+        font-size: 20px;
+    }
+}
