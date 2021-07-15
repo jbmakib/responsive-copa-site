@@ -479,3 +479,15 @@ responsive design starts
         font-size: 20px;
     }
 }
+
+@media only screen and (min-width: 993px) and (max-width:1312px) {
+    /* home/intro section styles */
+    /* common styles */
+    .container {
+        padding: 50px;
+    }
+    /* players section */
+    .player-box {
+        width: 90%;
+    }
+}
