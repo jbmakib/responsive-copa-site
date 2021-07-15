@@ -52,6 +52,7 @@ intro/home section styles starts
     color: #fff;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    align-items: center;
 }
 
 #intro h1 {
@@ -491,7 +492,7 @@ responsive design starts
         width: 450px;
     }
     #intro img {
-        width: 90%;
+        width: 100%;
         height: auto;
     }
     /* common styles */
@@ -503,4 +504,20 @@ responsive design starts
         width: 90%;
     }
     /* highlights section */
+    #highlights {
+        align-items: center;
+    }
+    #highlights h1 {
+        padding-right: 0;
+        font-size: 45px;
+        width: 90%;
+        margin-top: 0;
+    }
+    #highlights p {
+        width: 90%;
+    }
+    #highlights img {
+        width: 100%;
+        height: auto;
+    }
 }
